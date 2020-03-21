@@ -38,7 +38,7 @@
 #define pgm_read_byte(addr)   (*(const unsigned char *)(addr))
 
 #include <mbed.h>
-#define delay(x)	wait_ms(x)
+#define delay(x)	wait_us(x * 1000)
 #define yield()		void()
 
 /*
